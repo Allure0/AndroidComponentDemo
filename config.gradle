@@ -1,0 +1,30 @@
+ext {
+
+    app = [
+            packageName: "com.chips.client",
+    ]
+    defaultConfig = [
+            compileSdkVersion: 27,
+            buildToolsVersion: "27.0.0",
+            minSdkVersion    : 19,
+            targetSdkVersion : 9,
+            versionCode      : 1,
+            versionName      : '1.0.0',
+    ]
+
+
+    dependencies = [
+            appcompatV7                      : 'com.android.support:appcompat-v7:27.0.1',
+            design                           : 'com.android.support:design:27.0.1',
+            constraintLayout                 : 'com.android.support.constraint:constraint-layout:1.0.2',
+            quickFragment                    : "com.allure0:QuickFragment:1.0.2",//Fragment框架
+            //跳转路由Router
+            arouter_api :'com.alibaba:arouter-api:1.3.1',
+            arouter_compiler :'com.alibaba:arouter-compiler:1.1.4',
+            //汉字转拼音
+            tinyPinyin:'com.github.promeg:tinypinyin:2.0.3',
+            //Loading content error empty等状态页
+            loadsir: 'com.kingja.loadsir:loadsir:1.3.6',
+            baseRecycleViewAdapter:  'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+    ]
+}

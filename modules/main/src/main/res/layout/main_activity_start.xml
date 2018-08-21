@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:id="@+id/text"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:text="主页"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <Button
+        android:text="跳转到登录组件"
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="跳转到商店组件（需要判断是否登录）"
+        android:id="@+id/btn_shop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="跳转到主页二级页面"
+        android:id="@+id/btn_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

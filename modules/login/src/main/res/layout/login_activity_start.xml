@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:id="@+id/text"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:text="Login组件主页"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+
+    <android.support.v7.widget.GridLayout
+        android:layout_below="@+id/text"
+        android:id="@+id/grid_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:columnCount="3"
+        app:useDefaultMargins="true">
+
+        <TextView
+            android:text="UserName:"
+            app:layout_gravity="right" />
+
+        <EditText
+            android:id="@+id/et_username"
+            android:ems="10"
+            app:layout_columnSpan="2" />
+
+        <TextView
+            android:text="Password:"
+            app:layout_column="0"
+            app:layout_gravity="right" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:ems="10"
+            app:layout_columnSpan="2" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:text="Login"
+            app:layout_column="1" />
+
+        <Button
+            android:id="@+id/btn_logOut"
+            android:text="Logout"
+            app:layout_column="2" />
+
+
+    </android.support.v7.widget.GridLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

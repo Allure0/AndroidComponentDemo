@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AndroidComponent.iml" filepath="$PROJECT_DIR$/AndroidComponent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base/base.iml" filepath="$PROJECT_DIR$/base/base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/login/login.iml" filepath="$PROJECT_DIR$/modules/login/login.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/main/main.iml" filepath="$PROJECT_DIR$/modules/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/modules.iml" filepath="$PROJECT_DIR$/modules/modules.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modules/shop/shop.iml" filepath="$PROJECT_DIR$/modules/shop/shop.iml" />
+    </modules>
+  </component>
+</project>

@@ -2,6 +2,8 @@
 
 Android组件化,插件自动完成依赖特性
 
+[ComponentPlugin](https://github.com/Allure0/AndroidComponentPlugin)
+
 |自动完成特性       |含义| 
 | :--------: | :-----: | 
 |  组件单独运行    | 如何将一个庞大的项目分而治之,可单独运行和集成为一个整体   | 

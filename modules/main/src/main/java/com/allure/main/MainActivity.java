@@ -8,9 +8,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
+import com.allure.base.application.BaseApplication;
 import com.allure.common.ARouterManager;
 import com.allure.common.ARouterPathConfig;
 import com.allure.provider.ILoginProvider;
@@ -24,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
     private Button mButtonLigin;
     private Button mButtonShop;
+    private TextView mTextLogin;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -56,8 +59,22 @@ public class MainActivity extends AppCompatActivity {
                 ARouterManager.start2MainSecond();
             }
         });
+
+
+
+
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        //
+        if(BaseApplication.getInstance().isLogin()){
+            ((TextView)findViewById(R.id.text_login)).setText("已登录");
+        }else{
+            ((TextView)findViewById(R.id.text_login)).setText("未登录");
+        }
+    }
 
     public void go2Login() {
         try {

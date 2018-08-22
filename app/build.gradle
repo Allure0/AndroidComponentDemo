@@ -30,14 +30,13 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api project(':base')
     //ARouter
     implementation rootProject.ext.dependencies.arouter_api
     annotationProcessor rootProject.ext.dependencies.arouter_compiler
 
-    compile project(':base')
-//    compile project(':modules:login')
-////    compile project(':modules:main')
-//    compile project(':modules:shop')
+
+
 }
 
 

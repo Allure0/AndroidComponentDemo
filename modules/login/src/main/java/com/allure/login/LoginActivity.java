@@ -47,9 +47,10 @@ public class LoginActivity extends AppCompatActivity {
 
                 if ("".equals(editName.getText().toString()) ||
                         "".equals(editPwd.getText().toString())) {
-                    ToastUtils.showShort("请输入用户名和密码");
+                    ToastUtils.showShort("请输入任意用户名和密码");
 
                 } else {
+                    ToastUtils.showShort("登录中...");
                     progressBar.setVisibility(View.VISIBLE);
                     new Handler().postDelayed(new Runnable() {
                         @Override
@@ -71,7 +72,7 @@ public class LoginActivity extends AppCompatActivity {
         findViewById(R.id.btn_logOut).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                ToastUtils.showShort("登录中...");
                 BaseApplication.getInstance().setLogin(false);
                 finish();
 

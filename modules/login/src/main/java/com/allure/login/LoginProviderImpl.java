@@ -34,8 +34,8 @@ public class LoginProviderImpl implements ILoginProvider {
     @Override
     public LoginInfoBean getLoginInfo() {
         LoginInfoBean loginInfoBean = new LoginInfoBean();
-        loginInfoBean.setAge("18");
-        loginInfoBean.setName("inChat");
+        loginInfoBean.setAge("18岁");
+        loginInfoBean.setName("我是Login组件的名字");
         loginInfoBean.setLogin(true);
         return loginInfoBean;
     }

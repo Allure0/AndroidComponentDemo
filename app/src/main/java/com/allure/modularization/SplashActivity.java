@@ -12,11 +12,9 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ARouterManager.start2Main();
     }
 
     public  void go(View view){
         ARouterManager.start2Main();
-
     }
 }

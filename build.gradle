@@ -38,7 +38,7 @@ buildscript {
         maven {
             //本地Maven仓库地址
 //            url uri('/Users/mac/Downloads/ttt')
-            url  "http://dl.bintray.com/allure0/maven"
+            url "http://dl.bintray.com/allure0/maven"
         }
     }
     dependencies {
@@ -52,7 +52,7 @@ buildscript {
 
 
 hostAppConfig {
-    isDebug true
+    isDebug false
 
     //宿主载体
     apps {
@@ -62,27 +62,30 @@ hostAppConfig {
             modules ':modules:login',
                     ':modules:shop',
                     ':modules:main'
+
         }
     }
 
 //组件
     modules {
+
+
         login {
-            isRunAlone false
+            isRunAlone true
             name ":modules:login"
             applicationId "com.allure.login"
             mainActivity ".LoginActivity"
 
         }
         shop {
-            isRunAlone false
+            isRunAlone true
             name ":modules:shop"
             applicationId "com.allure.shop"
             mainActivity ".ShopActivity"
 
         }
         main {
-            isRunAlone false
+            isRunAlone true
             name ":modules:main"
             applicationId "com.allure.main"
             mainActivity ".MainActivity"

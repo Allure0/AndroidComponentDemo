@@ -2,6 +2,8 @@
 
 Android组件化,插件自动完成依赖特性
 
+
+
 [ComponentPlugin](https://github.com/Allure0/AndroidComponentPlugin)
 
 |自动完成特性       |含义| 
@@ -85,7 +87,7 @@ apply plugin: 'com.allure.appmodules'
 
 | hostAppConfig       |解释| 
 | :--------: | :-----: | 
-| isDebug    | 是否开启debug模式，只有当isDebug为true时，modules的isRunAlone才能生效。 | 
+| isDebug    | 是否开启debug模式，只有当isDebug为true时，modules的isRunAlone才能生效。同时注意更改此属性后需要清除app的壳工程app的缓存在运行 |
 | apps    | 壳工程列表,可以有多个壳工程 | 
 | modules    | 各个组件Lib | 
 
@@ -109,3 +111,5 @@ apply plugin: 'com.allure.appmodules'
 
 
 [具体插件使用以及具体分析请查看Demo](https://www.jianshu.com/p/23b0239c45aa)
+
+**Tips:注意isDebug更改后一定要清除app的缓存在重新sync and run**
